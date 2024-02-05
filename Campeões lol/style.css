@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(fontes/BebasNeue-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Heavitas' ;
+    src: url(fontes/Heavitas.ttf);
+}
+
+:root {
+    --cor0: #248CB3;
+    --cor1: #336B80;
+    --cor2: #00A8E5;
+    --cor3: #2E444C;
+    --cor4: #293033;
+    --cor5: #5fcaf1;
+
+    --fonte-destaque: 'Bebas', sans-serif;
+    --fonte-titulos: 'Heavitas', sans-serif;
+}    
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+    background: url(imagens/fundo.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-destaque);
+    padding: 5px;
+    font-size: 1.7em;
+}
+
+header {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3) );
+    
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    color: var(--cor0);
+    border-radius: 5px;
+    background-color: #00A8E5;
+    color: var(--cor3);
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    font-size: 3.5vw;
+}
+
+main {
+    max-width: 800px;
+    min-width: 300px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+article img{
+    margin: 20px;
+}
+
+section img {
+    max-width: 100px;
+    border: 2px solid black;
+}
+
+.destaque {
+    font-weight: bolder;
+}
+
+.champs {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+}
+
+.champs:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.606);
+    transition: transform 0.3s;
+}
+
+.champ-img {
+    border: 2px solid black;
+}
+
+iframe {
+   width: 500px;
+   height: 550px;
+   border: 1px solid black;
+   margin: 20px;
+}
+
+.skill {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.skill:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.606);
+    transition: transform 0.3s;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
