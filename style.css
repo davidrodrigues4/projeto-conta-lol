@@ -150,7 +150,25 @@ div.video > iframe {
     height: 550px;
     border: 1px solid black;
 }
+@media (max-width: 450px) {
 
+    div.video {
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 57%;
+        position: relative;
+        margin-bottom: 400px;
+    }
+
+    div.video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        width: 100%;
+        height: 260%;
+        border: 1px solid black;
+    }
+    }
 /*
 iframe {
    width: 500px;
